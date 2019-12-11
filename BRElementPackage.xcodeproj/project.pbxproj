@@ -17,6 +17,8 @@
 		14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F4E239D40E50055C06B /* BRFunctiomModel.swift */; };
 		14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F50239D45510055C06B /* BRImageZoom.storyboard */; };
 		14140F55239D48F40055C06B /* Snowboard.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 14140F54239D48F40055C06B /* Snowboard.JPG */; };
+		14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */; };
+		14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		14140F4E239D40E50055C06B /* BRFunctiomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRFunctiomModel.swift; sourceTree = "<group>"; };
 		14140F50239D45510055C06B /* BRImageZoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRImageZoom.storyboard; sourceTree = "<group>"; };
 		14140F54239D48F40055C06B /* Snowboard.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowboard.JPG; sourceTree = "<group>"; };
+		14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRAutoExpandCollection.swift; sourceTree = "<group>"; };
+		14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRAutoExpandCollection.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		14140F2F239CE7400055C06B /* BRElementPackage */ = {
 			isa = PBXGroup;
 			children = (
+				14140F5723A1090E0055C06B /* AutoExpandCollection */,
 				14140F4D239D40CD0055C06B /* Models */,
 				14140F44239D3EDA0055C06B /* ImageZoom */,
 				14140F30239CE7400055C06B /* AppDelegate.swift */,
@@ -93,6 +98,15 @@
 				14140F4E239D40E50055C06B /* BRFunctiomModel.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		14140F5723A1090E0055C06B /* AutoExpandCollection */ = {
+			isa = PBXGroup;
+			children = (
+				14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */,
+				14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */,
+			);
+			path = AutoExpandCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 				14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */,
 				14140F3A239CE7430055C06B /* Assets.xcassets in Resources */,
 				14140F38239CE7400055C06B /* BRSelectViewController.storyboard in Resources */,
+				14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +187,7 @@
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
 				14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */,
 				14140F31239CE7400055C06B /* AppDelegate.swift in Sources */,
+				14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
