@@ -10,7 +10,7 @@ import Foundation
 
 struct Department : Codable {
     var BranchName : String?
-    var Dep : String?
+    var Dep : BelowDept?
     
     enum BelowDept : Codable{
         case all , Finance , HR , IT_Dept
@@ -38,7 +38,7 @@ extension Department.BelowDept : RawRepresentable{
         case .HR: return "HR"
         case .IT_Dept: return "IT_Dept"
         }       
-    }    
+    }
 }
 
 

@@ -24,6 +24,7 @@
 		149F135723BE40C80078DE6D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135623BE40C80078DE6D /* DetailViewController.swift */; };
 		149F135D23BE44CF0078DE6D /* dept.json in Resources */ = {isa = PBXBuildFile; fileRef = 149F135C23BE44CF0078DE6D /* dept.json */; };
 		149F135F23BE45230078DE6D /* Depts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135E23BE45230078DE6D /* Depts.swift */; };
+		149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136023C0E68F0078DE6D /* ResultFooter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		149F135623BE40C80078DE6D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		149F135C23BE44CF0078DE6D /* dept.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dept.json; sourceTree = "<group>"; };
 		149F135E23BE45230078DE6D /* Depts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depts.swift; sourceTree = "<group>"; };
+		149F136023C0E68F0078DE6D /* ResultFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFooter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				149F135623BE40C80078DE6D /* DetailViewController.swift */,
 				149F135C23BE44CF0078DE6D /* dept.json */,
 				149F135E23BE45230078DE6D /* Depts.swift */,
+				149F136023C0E68F0078DE6D /* ResultFooter.swift */,
 			);
 			path = UISearchBarController;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
 				14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */,
 				14140F31239CE7400055C06B /* AppDelegate.swift in Sources */,
+				149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */,
 				14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */,
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,

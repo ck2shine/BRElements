@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pz2-QH-psN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -38,7 +38,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="tSF-1n-qDd" detailTextLabel="06M-qv-XZ0" style="IBUITableViewCellStyleSubtitle" id="g3m-z8-ZPF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="tSF-1n-qDd" detailTextLabel="06M-qv-XZ0" style="IBUITableViewCellStyleSubtitle" id="g3m-z8-ZPF">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g3m-z8-ZPF" id="tmB-EO-hyc">
@@ -61,6 +61,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="cQ4-Hr-PFo" kind="show" identifier="toDetail" id="1EZ-xc-yaI"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -68,28 +71,52 @@
                                     <outlet property="delegate" destination="aHU-DV-jd2" id="ilm-AO-2gV"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-FH-VxR">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41D-MR-X1M" customClass="ResultFooter" customModule="BRElementPackage" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="mpJ-qa-Ge0"/>
+                                    <constraint firstAttribute="height" constant="50" id="7Db-PP-vxH"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="heightConstraint" destination="7Db-PP-vxH" id="Em7-IT-rRL"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="eFE-FH-VxR" firstAttribute="leading" secondItem="KCU-Kl-3ta" secondAttribute="leading" id="9Kz-fK-hFx"/>
                             <constraint firstItem="WMW-3s-e0b" firstAttribute="leading" secondItem="KCU-Kl-3ta" secondAttribute="leading" id="Ccx-bD-ggn"/>
-                            <constraint firstItem="V4g-6C-hyv" firstAttribute="top" secondItem="eFE-FH-VxR" secondAttribute="bottom" id="GCO-Uk-xc1"/>
-                            <constraint firstItem="WMW-3s-e0b" firstAttribute="top" secondItem="khG-nR-qHx" secondAttribute="bottom" id="KNn-2Y-mQq"/>
-                            <constraint firstItem="eFE-FH-VxR" firstAttribute="top" secondItem="WMW-3s-e0b" secondAttribute="bottom" id="LNf-yq-A9e"/>
+                            <constraint firstItem="41D-MR-X1M" firstAttribute="top" secondItem="WMW-3s-e0b" secondAttribute="bottom" id="IhL-Il-PlW"/>
+                            <constraint firstAttribute="trailing" secondItem="41D-MR-X1M" secondAttribute="trailing" id="Ro7-IF-A6B"/>
+                            <constraint firstItem="41D-MR-X1M" firstAttribute="leading" secondItem="KCU-Kl-3ta" secondAttribute="leading" id="SGU-ks-4ZM"/>
+                            <constraint firstItem="V4g-6C-hyv" firstAttribute="top" secondItem="41D-MR-X1M" secondAttribute="bottom" id="fhN-0p-WO3"/>
                             <constraint firstAttribute="trailing" secondItem="WMW-3s-e0b" secondAttribute="trailing" id="hHA-PX-D6t"/>
-                            <constraint firstAttribute="trailing" secondItem="eFE-FH-VxR" secondAttribute="trailing" id="nZc-7Z-vzY"/>
+                            <constraint firstItem="WMW-3s-e0b" firstAttribute="top" secondItem="khG-nR-qHx" secondAttribute="bottom" id="vgC-bq-oWZ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="f3u-Sn-YEx"/>
+                    <navigationItem key="navigationItem" id="f3u-Sn-YEx">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="JAE-FN-RIG">
+                            <rect key="frame" x="207" y="22" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iiy-Fy-vOr">
+                                    <rect key="frame" x="-46" y="-10.5" width="92" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Iiy-Fy-vOr" firstAttribute="centerY" secondItem="JAE-FN-RIG" secondAttribute="centerY" id="kE4-YS-buB"/>
+                                <constraint firstItem="Iiy-Fy-vOr" firstAttribute="centerX" secondItem="JAE-FN-RIG" secondAttribute="centerX" id="obJ-FG-xiH"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <connections>
-                        <outlet property="SearchFooterView" destination="eFE-FH-VxR" id="CW3-0v-J7L"/>
+                        <outlet property="SearchHeaderView" destination="41D-MR-X1M" id="ZJP-MU-l02"/>
+                        <outlet property="dataTable" destination="WMW-3s-e0b" id="sY9-TJ-j7y"/>
+                        <outlet property="resultFooterConstraint" destination="fhN-0p-WO3" id="YB8-XP-dDd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5gV-7P-qT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -107,8 +134,41 @@
                     <view key="view" contentMode="scaleToFill" id="B8n-92-gCm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z8C-Ss-h0S">
+                                <rect key="frame" x="0.0" y="138" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Branch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otW-XR-zhE">
+                                        <rect key="frame" x="10" y="10" width="394" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dept" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjh-Gq-SW7">
+                                        <rect key="frame" x="10" y="55" width="394" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1LP-ab-hUr"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z8C-Ss-h0S" secondAttribute="trailing" id="Gwy-rR-ysr"/>
+                            <constraint firstItem="Z8C-Ss-h0S" firstAttribute="leading" secondItem="B8n-92-gCm" secondAttribute="leading" id="YKP-bg-KyK"/>
+                            <constraint firstItem="Z8C-Ss-h0S" firstAttribute="top" secondItem="nxT-YY-Qrv" secondAttribute="bottom" constant="50" id="fdL-lk-CdT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DvB-sB-0Ih"/>
+                    <connections>
+                        <outlet property="BranchLabel" destination="otW-XR-zhE" id="iXR-EJ-a16"/>
+                        <outlet property="DeptLabel" destination="xjh-Gq-SW7" id="OAW-ks-c8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aav-bA-hjS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
