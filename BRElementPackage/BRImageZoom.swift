@@ -17,18 +17,23 @@ class BRImageZoom: UIViewController {
     @IBOutlet weak var ZoomImageView: UIImageView!
     @IBOutlet weak var ImageScrollView: UIScrollView!
     
+    var photoName : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     
-        self.ZoomImageView.image = UIImage(named: "Snowboard.JPG")
+        if let photoName = photoName {
+            self.ZoomImageView.image = UIImage(named: photoName)
+        }
+      
         
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        updateImageZoomSize(view.bounds.size)
+        //updateImageZoomSize(view.bounds.size)
     }
     
     func updateImageZoomSize(_ size : CGSize){
@@ -53,7 +58,7 @@ extension BRImageZoom : UIScrollViewDelegate{
  
     //keep the image in the center
     func updateConstraintsForSize(_ size: CGSize) {
-      
+        print(ZoomImageView.frame)
       let yOffset = max(0, (size.height - ZoomImageView.frame.height) / 2)
       imageViewTopConstraint.constant = yOffset
       imageViewBottonConstraint.constant = yOffset

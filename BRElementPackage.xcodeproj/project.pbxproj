@@ -25,6 +25,10 @@
 		149F135D23BE44CF0078DE6D /* dept.json in Resources */ = {isa = PBXBuildFile; fileRef = 149F135C23BE44CF0078DE6D /* dept.json */; };
 		149F135F23BE45230078DE6D /* Depts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135E23BE45230078DE6D /* Depts.swift */; };
 		149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136023C0E68F0078DE6D /* ResultFooter.swift */; };
+		149F136323C1BBC80078DE6D /* River.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 149F136223C1BBC80078DE6D /* River.JPG */; };
+		149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */; };
+		149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136823C2077E0078DE6D /* BRScrollCollection.swift */; };
+		149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		149F135C23BE44CF0078DE6D /* dept.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dept.json; sourceTree = "<group>"; };
 		149F135E23BE45230078DE6D /* Depts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depts.swift; sourceTree = "<group>"; };
 		149F136023C0E68F0078DE6D /* ResultFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFooter.swift; sourceTree = "<group>"; };
+		149F136223C1BBC80078DE6D /* River.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = River.JPG; sourceTree = "<group>"; };
+		149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRZoomPhotoCell.swift; sourceTree = "<group>"; };
+		149F136823C2077E0078DE6D /* BRScrollCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRScrollCollection.swift; sourceTree = "<group>"; };
+		149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPhotoPagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +106,13 @@
 		14140F44239D3EDA0055C06B /* ImageZoom */ = {
 			isa = PBXGroup;
 			children = (
+				149F136223C1BBC80078DE6D /* River.JPG */,
 				14140F54239D48F40055C06B /* Snowboard.JPG */,
 				14140F49239D3F310055C06B /* BRImageZoom.swift */,
 				14140F50239D45510055C06B /* BRImageZoom.storyboard */,
+				149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */,
+				149F136823C2077E0078DE6D /* BRScrollCollection.swift */,
+				149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */,
 			);
 			name = ImageZoom;
 			sourceTree = "<group>";
@@ -197,6 +209,7 @@
 				14140F55239D48F40055C06B /* Snowboard.JPG in Resources */,
 				14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */,
 				14140F3A239CE7430055C06B /* Assets.xcassets in Resources */,
+				149F136323C1BBC80078DE6D /* River.JPG in Resources */,
 				149F135323BE40170078DE6D /* BRUISearchBar.storyboard in Resources */,
 				14140F38239CE7400055C06B /* BRSelectViewController.storyboard in Resources */,
 				149F135D23BE44CF0078DE6D /* dept.json in Resources */,
@@ -213,13 +226,16 @@
 			files = (
 				14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */,
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
+				149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */,
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
+				149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */,
 				14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */,
 				14140F31239CE7400055C06B /* AppDelegate.swift in Sources */,
 				149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */,
 				14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */,
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
+				149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */,
 				149F135723BE40C80078DE6D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
