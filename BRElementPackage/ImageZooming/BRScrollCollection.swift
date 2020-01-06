@@ -14,7 +14,7 @@ class BRScrollCollection: UICollectionViewController {
 
     private let reuseIdentifier = "BRZoomPhotoCell"
     
-    private var photoAry : [String] = ["Snowboard.JPG" , "River.JPG"]
+    private var photoAry : [String] = ["Snowboard.JPG" , "River.JPG" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +45,10 @@ class BRScrollCollection: UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toDetailPhoto" , let toZoomVC = segue.destination as? BRImageZoom , let cell = sender as? BRZoomPhotoCell, let indexPath = collectionView?.indexPath(for: cell){
+        if segue.identifier == "showPageManager" , let toManager = segue.destination as? BRPageManagerViewController , let cell = sender as? BRZoomPhotoCell, let indexPath = collectionView?.indexPath(for: cell){
            
-            toZoomVC.photoName = photoAry[indexPath.row]
+            toManager.photoAry = photoAry
+            toManager.currentIdx = indexPath.row
         }
     }
 }

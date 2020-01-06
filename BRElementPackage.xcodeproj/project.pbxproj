@@ -16,7 +16,6 @@
 		14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F49239D3F310055C06B /* BRImageZoom.swift */; };
 		14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F4E239D40E50055C06B /* BRFunctiomModel.swift */; };
 		14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F50239D45510055C06B /* BRImageZoom.storyboard */; };
-		14140F55239D48F40055C06B /* Snowboard.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 14140F54239D48F40055C06B /* Snowboard.JPG */; };
 		14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */; };
 		14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */; };
 		149F135323BE40170078DE6D /* BRUISearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149F135223BE40170078DE6D /* BRUISearchBar.storyboard */; };
@@ -25,10 +24,14 @@
 		149F135D23BE44CF0078DE6D /* dept.json in Resources */ = {isa = PBXBuildFile; fileRef = 149F135C23BE44CF0078DE6D /* dept.json */; };
 		149F135F23BE45230078DE6D /* Depts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135E23BE45230078DE6D /* Depts.swift */; };
 		149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136023C0E68F0078DE6D /* ResultFooter.swift */; };
-		149F136323C1BBC80078DE6D /* River.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 149F136223C1BBC80078DE6D /* River.JPG */; };
 		149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */; };
 		149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136823C2077E0078DE6D /* BRScrollCollection.swift */; };
 		149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */; };
+		45A016B223C2D3EB00B7DC08 /* BRPageManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016B123C2D3EB00B7DC08 /* BRPageManagerViewController.swift */; };
+		45A016B723C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A016B623C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard */; };
+		45A016B923C3040300B7DC08 /* BRDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */; };
+		45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016BA23C3089A00B7DC08 /* BRDetailDataViewController.swift */; };
+		45A016BD23C319E400B7DC08 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016BC23C319E400B7DC08 /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +46,6 @@
 		14140F49239D3F310055C06B /* BRImageZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRImageZoom.swift; sourceTree = "<group>"; };
 		14140F4E239D40E50055C06B /* BRFunctiomModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRFunctiomModel.swift; sourceTree = "<group>"; };
 		14140F50239D45510055C06B /* BRImageZoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRImageZoom.storyboard; sourceTree = "<group>"; };
-		14140F54239D48F40055C06B /* Snowboard.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Snowboard.JPG; sourceTree = "<group>"; };
 		14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRAutoExpandCollection.swift; sourceTree = "<group>"; };
 		14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRAutoExpandCollection.storyboard; sourceTree = "<group>"; };
 		149F135223BE40170078DE6D /* BRUISearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRUISearchBar.storyboard; sourceTree = "<group>"; };
@@ -52,10 +54,14 @@
 		149F135C23BE44CF0078DE6D /* dept.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dept.json; sourceTree = "<group>"; };
 		149F135E23BE45230078DE6D /* Depts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depts.swift; sourceTree = "<group>"; };
 		149F136023C0E68F0078DE6D /* ResultFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFooter.swift; sourceTree = "<group>"; };
-		149F136223C1BBC80078DE6D /* River.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = River.JPG; sourceTree = "<group>"; };
 		149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRZoomPhotoCell.swift; sourceTree = "<group>"; };
 		149F136823C2077E0078DE6D /* BRScrollCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRScrollCollection.swift; sourceTree = "<group>"; };
 		149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPhotoPagesViewController.swift; sourceTree = "<group>"; };
+		45A016B123C2D3EB00B7DC08 /* BRPageManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPageManagerViewController.swift; sourceTree = "<group>"; };
+		45A016B623C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRDetailTableStoryboard.storyboard; sourceTree = "<group>"; };
+		45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDetailTableViewController.swift; sourceTree = "<group>"; };
+		45A016BA23C3089A00B7DC08 /* BRDetailDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDetailDataViewController.swift; sourceTree = "<group>"; };
+		45A016BC23C319E400B7DC08 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +94,11 @@
 		14140F2F239CE7400055C06B /* BRElementPackage */ = {
 			isa = PBXGroup;
 			children = (
+				45A016B523C303CB00B7DC08 /* DetailWithTable */,
+				45A016B423C303B700B7DC08 /* ShareModels */,
+				45A016B323C3039D00B7DC08 /* ImageZooming */,
 				149F135123BE3FD40078DE6D /* UISearchBarController */,
 				14140F5723A1090E0055C06B /* AutoExpandCollection */,
-				14140F4D239D40CD0055C06B /* Models */,
-				14140F44239D3EDA0055C06B /* ImageZoom */,
 				14140F30239CE7400055C06B /* AppDelegate.swift */,
 				14140F32239CE7400055C06B /* SceneDelegate.swift */,
 				14140F34239CE7400055C06B /* BRSelectViewController.swift */,
@@ -101,28 +108,6 @@
 				14140F3E239CE7430055C06B /* Info.plist */,
 			);
 			path = BRElementPackage;
-			sourceTree = "<group>";
-		};
-		14140F44239D3EDA0055C06B /* ImageZoom */ = {
-			isa = PBXGroup;
-			children = (
-				149F136223C1BBC80078DE6D /* River.JPG */,
-				14140F54239D48F40055C06B /* Snowboard.JPG */,
-				14140F49239D3F310055C06B /* BRImageZoom.swift */,
-				14140F50239D45510055C06B /* BRImageZoom.storyboard */,
-				149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */,
-				149F136823C2077E0078DE6D /* BRScrollCollection.swift */,
-				149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */,
-			);
-			name = ImageZoom;
-			sourceTree = "<group>";
-		};
-		14140F4D239D40CD0055C06B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				14140F4E239D40E50055C06B /* BRFunctiomModel.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		14140F5723A1090E0055C06B /* AutoExpandCollection */ = {
@@ -145,6 +130,38 @@
 				149F136023C0E68F0078DE6D /* ResultFooter.swift */,
 			);
 			path = UISearchBarController;
+			sourceTree = "<group>";
+		};
+		45A016B323C3039D00B7DC08 /* ImageZooming */ = {
+			isa = PBXGroup;
+			children = (
+				14140F49239D3F310055C06B /* BRImageZoom.swift */,
+				14140F50239D45510055C06B /* BRImageZoom.storyboard */,
+				149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */,
+				149F136823C2077E0078DE6D /* BRScrollCollection.swift */,
+				149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */,
+				45A016B123C2D3EB00B7DC08 /* BRPageManagerViewController.swift */,
+			);
+			path = ImageZooming;
+			sourceTree = "<group>";
+		};
+		45A016B423C303B700B7DC08 /* ShareModels */ = {
+			isa = PBXGroup;
+			children = (
+				14140F4E239D40E50055C06B /* BRFunctiomModel.swift */,
+				45A016BC23C319E400B7DC08 /* UIDevice+Extension.swift */,
+			);
+			path = ShareModels;
+			sourceTree = "<group>";
+		};
+		45A016B523C303CB00B7DC08 /* DetailWithTable */ = {
+			isa = PBXGroup;
+			children = (
+				45A016B623C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard */,
+				45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */,
+				45A016BA23C3089A00B7DC08 /* BRDetailDataViewController.swift */,
+			);
+			path = DetailWithTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,12 +223,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				14140F3D239CE7430055C06B /* LaunchScreen.storyboard in Resources */,
-				14140F55239D48F40055C06B /* Snowboard.JPG in Resources */,
 				14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */,
 				14140F3A239CE7430055C06B /* Assets.xcassets in Resources */,
-				149F136323C1BBC80078DE6D /* River.JPG in Resources */,
 				149F135323BE40170078DE6D /* BRUISearchBar.storyboard in Resources */,
 				14140F38239CE7400055C06B /* BRSelectViewController.storyboard in Resources */,
+				45A016B723C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard in Resources */,
 				149F135D23BE44CF0078DE6D /* dept.json in Resources */,
 				14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */,
 			);
@@ -224,15 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A016B923C3040300B7DC08 /* BRDetailTableViewController.swift in Sources */,
 				14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */,
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
 				149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */,
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
 				149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */,
+				45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */,
 				14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */,
+				45A016BD23C319E400B7DC08 /* UIDevice+Extension.swift in Sources */,
 				14140F31239CE7400055C06B /* AppDelegate.swift in Sources */,
 				149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */,
 				14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */,
+				45A016B223C2D3EB00B7DC08 /* BRPageManagerViewController.swift in Sources */,
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
 				149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */,

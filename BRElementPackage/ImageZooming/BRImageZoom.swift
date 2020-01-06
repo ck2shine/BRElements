@@ -9,7 +9,9 @@
 import UIKit
 
 class BRImageZoom: UIViewController {
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageWidthConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageViewBottonConstraint: NSLayoutConstraint!
@@ -23,17 +25,16 @@ class BRImageZoom: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    
-        if let photoName = photoName {
-            self.ZoomImageView.image = UIImage(named: photoName)
-        }
-      
+
+        self.ZoomImageView.image =   changeImageViewSize()
+
+
         
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        //updateImageZoomSize(view.bounds.size)
+        updateImageZoomSize(view.bounds.size)
     }
     
     func updateImageZoomSize(_ size : CGSize){
@@ -43,6 +44,26 @@ class BRImageZoom: UIViewController {
         let minScale = min(width, height)
         ImageScrollView.minimumZoomScale = minScale
         ImageScrollView.zoomScale = minScale
+    }
+
+    func changeImageViewSize() ->UIImage?{
+        guard let photoName = photoName else {return nil}
+        let image = UIImage(named: photoName)
+
+        if  Int(image?.size.width ?? 0) > Int(image?.size.height ?? 0){
+
+            imageHeightConstraint.constant = 768
+            imageWidthConstraint.constant = 1024
+            view.layoutIfNeeded()
+            return image?.resizeImage(CGSize(width: 1024, height: 768))
+        }else{
+            imageHeightConstraint.constant = 1024
+            imageWidthConstraint.constant = 768
+            view.layoutIfNeeded()
+            return image?.resizeImage(CGSize(width: 768, height: 1024))
+
+        }
+
     }
 }
 
@@ -55,18 +76,29 @@ extension BRImageZoom : UIScrollViewDelegate{
         updateConstraintsForSize(view.bounds.size)
     }
     
- 
+
     //keep the image in the center
     func updateConstraintsForSize(_ size: CGSize) {
         print(ZoomImageView.frame)
-      let yOffset = max(0, (size.height - ZoomImageView.frame.height) / 2)
-      imageViewTopConstraint.constant = yOffset
-      imageViewBottonConstraint.constant = yOffset
-     
-      let xOffset = max(0, (size.width - ZoomImageView.frame.width) / 2)
-      imageViewLeadingConstraint.constant = xOffset
-      imageViewTrailingConstraint.constant = xOffset
+        let yOffset = max(0, (size.height - ZoomImageView.frame.height) / 2)
+        imageViewTopConstraint.constant = yOffset
+        imageViewBottonConstraint.constant = yOffset
+
+        let xOffset = max(0, (size.width - ZoomImageView.frame.width) / 2)
+        imageViewLeadingConstraint.constant = xOffset
+        imageViewTrailingConstraint.constant = xOffset
         
-      view.layoutIfNeeded()
+        view.layoutIfNeeded()
+    }
+}
+
+
+extension UIImage{
+    func resizeImage(_ size : CGSize) -> UIImage{
+        let render = UIGraphicsImageRenderer(size: size)
+        let reSizeImage = render.image { _ in
+            draw(in: CGRect(origin: CGPoint.zero, size: size))
+        }
+        return reSizeImage
     }
 }
