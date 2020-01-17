@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CmG-6L-z03">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Expand Height-->
+        <scene sceneID="UVl-XI-6dB">
+            <objects>
+                <viewController id="CmG-6L-z03" customClass="BRDynamicExpandHeight" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kkd-Nf-gpP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zmn-n5-J01">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BRDynamicTableViewCell" rowHeight="200" id="VKa-OT-R9y" customClass="BRDynamicTableViewCell" customModule="BRElementPackage" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VKa-OT-R9y" id="H7j-4N-NEP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L5K-Hw-iWh" customClass="BRDynamicCollectionView" customModule="BRElementPackage" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yVf-ou-E3H">
+                                                        <size key="itemSize" width="111" height="88"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BRDynamicExpandCell" id="hT1-wt-I1o" customClass="BRDynamicExpandCell" customModule="BRElementPackage" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="111" height="88"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sqC-Jn-NvH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="111" height="88"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPV-D3-3SW">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="88"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="GPV-D3-3SW" firstAttribute="top" secondItem="sqC-Jn-NvH" secondAttribute="top" id="CdV-ny-Swe"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="GPV-D3-3SW" secondAttribute="trailing" id="OjA-lT-yht"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="GPV-D3-3SW" secondAttribute="bottom" id="j7b-GQ-IFu"/>
+                                                                    <constraint firstItem="GPV-D3-3SW" firstAttribute="leading" secondItem="sqC-Jn-NvH" secondAttribute="leading" id="mgp-AL-cly"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="111" height="88"/>
+                                                            <connections>
+                                                                <outlet property="showTextLabel" destination="GPV-D3-3SW" id="IGK-Np-FvZ"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="VKa-OT-R9y" id="i97-sc-hmD"/>
+                                                        <outlet property="delegate" destination="VKa-OT-R9y" id="SgA-jZ-1Z6"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="L5K-Hw-iWh" secondAttribute="trailing" id="Lwa-Rh-BOP"/>
+                                                <constraint firstItem="L5K-Hw-iWh" firstAttribute="leading" secondItem="H7j-4N-NEP" secondAttribute="leading" id="Mez-UE-nXf"/>
+                                                <constraint firstItem="L5K-Hw-iWh" firstAttribute="top" secondItem="H7j-4N-NEP" secondAttribute="top" id="Qo5-aP-buP"/>
+                                                <constraint firstAttribute="bottom" secondItem="L5K-Hw-iWh" secondAttribute="bottom" id="jmD-TR-Ezl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="L5K-Hw-iWh" id="ncZ-kg-yHe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="CmG-6L-z03" id="sPR-dv-bNY"/>
+                                    <outlet property="delegate" destination="CmG-6L-z03" id="rtm-Xk-yMX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uvr-VU-skk" firstAttribute="trailing" secondItem="zmn-n5-J01" secondAttribute="trailing" id="1Ub-Xx-KAC"/>
+                            <constraint firstItem="zmn-n5-J01" firstAttribute="leading" secondItem="uvr-VU-skk" secondAttribute="leading" id="Lqi-cJ-rjA"/>
+                            <constraint firstItem="zmn-n5-J01" firstAttribute="top" secondItem="uvr-VU-skk" secondAttribute="top" id="PRe-ec-r7T"/>
+                            <constraint firstItem="uvr-VU-skk" firstAttribute="bottom" secondItem="zmn-n5-J01" secondAttribute="bottom" id="wJa-dc-1jA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uvr-VU-skk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lwk-G5-FcW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+</document>

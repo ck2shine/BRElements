@@ -27,6 +27,11 @@
 		149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */; };
 		149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136823C2077E0078DE6D /* BRScrollCollection.swift */; };
 		149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */; };
+		456EE77B23D1B37F00381660 /* BRDynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE77A23D1B37F00381660 /* BRDynamicTableViewCell.swift */; };
+		458C637F23D1600B00AC7BA4 /* BRDynamicExpandHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C637E23D1600B00AC7BA4 /* BRDynamicExpandHeight.swift */; };
+		458C638123D1601700AC7BA4 /* BRDynamicExpandHeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458C638023D1601700AC7BA4 /* BRDynamicExpandHeight.storyboard */; };
+		458C638423D1878000AC7BA4 /* BRDynamicExpandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C638223D1878000AC7BA4 /* BRDynamicExpandCell.swift */; };
+		458C638F23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458C638E23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift */; };
 		45A016B223C2D3EB00B7DC08 /* BRPageManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016B123C2D3EB00B7DC08 /* BRPageManagerViewController.swift */; };
 		45A016B723C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A016B623C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard */; };
 		45A016B923C3040300B7DC08 /* BRDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */; };
@@ -57,6 +62,11 @@
 		149F136623C1BD130078DE6D /* BRZoomPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRZoomPhotoCell.swift; sourceTree = "<group>"; };
 		149F136823C2077E0078DE6D /* BRScrollCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRScrollCollection.swift; sourceTree = "<group>"; };
 		149F136A23C21C000078DE6D /* BRPhotoPagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPhotoPagesViewController.swift; sourceTree = "<group>"; };
+		456EE77A23D1B37F00381660 /* BRDynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDynamicTableViewCell.swift; sourceTree = "<group>"; };
+		458C637E23D1600B00AC7BA4 /* BRDynamicExpandHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDynamicExpandHeight.swift; sourceTree = "<group>"; };
+		458C638023D1601700AC7BA4 /* BRDynamicExpandHeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRDynamicExpandHeight.storyboard; sourceTree = "<group>"; };
+		458C638223D1878000AC7BA4 /* BRDynamicExpandCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDynamicExpandCell.swift; sourceTree = "<group>"; };
+		458C638E23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDynamicCollectionView.swift; sourceTree = "<group>"; };
 		45A016B123C2D3EB00B7DC08 /* BRPageManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPageManagerViewController.swift; sourceTree = "<group>"; };
 		45A016B623C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRDetailTableStoryboard.storyboard; sourceTree = "<group>"; };
 		45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDetailTableViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 		14140F2F239CE7400055C06B /* BRElementPackage */ = {
 			isa = PBXGroup;
 			children = (
+				458C637D23D15FCF00AC7BA4 /* DynamicExpandHeight */,
 				45A016B523C303CB00B7DC08 /* DetailWithTable */,
 				45A016B423C303B700B7DC08 /* ShareModels */,
 				45A016B323C3039D00B7DC08 /* ImageZooming */,
@@ -130,6 +141,18 @@
 				149F136023C0E68F0078DE6D /* ResultFooter.swift */,
 			);
 			path = UISearchBarController;
+			sourceTree = "<group>";
+		};
+		458C637D23D15FCF00AC7BA4 /* DynamicExpandHeight */ = {
+			isa = PBXGroup;
+			children = (
+				458C637E23D1600B00AC7BA4 /* BRDynamicExpandHeight.swift */,
+				458C638023D1601700AC7BA4 /* BRDynamicExpandHeight.storyboard */,
+				456EE77A23D1B37F00381660 /* BRDynamicTableViewCell.swift */,
+				458C638223D1878000AC7BA4 /* BRDynamicExpandCell.swift */,
+				458C638E23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift */,
+			);
+			path = DynamicExpandHeight;
 			sourceTree = "<group>";
 		};
 		45A016B323C3039D00B7DC08 /* ImageZooming */ = {
@@ -226,6 +249,7 @@
 				14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */,
 				14140F3A239CE7430055C06B /* Assets.xcassets in Resources */,
 				149F135323BE40170078DE6D /* BRUISearchBar.storyboard in Resources */,
+				458C638123D1601700AC7BA4 /* BRDynamicExpandHeight.storyboard in Resources */,
 				14140F38239CE7400055C06B /* BRSelectViewController.storyboard in Resources */,
 				45A016B723C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard in Resources */,
 				149F135D23BE44CF0078DE6D /* dept.json in Resources */,
@@ -243,15 +267,19 @@
 				45A016B923C3040300B7DC08 /* BRDetailTableViewController.swift in Sources */,
 				14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */,
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
+				456EE77B23D1B37F00381660 /* BRDynamicTableViewCell.swift in Sources */,
 				149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */,
+				458C637F23D1600B00AC7BA4 /* BRDynamicExpandHeight.swift in Sources */,
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
 				149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */,
 				45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */,
+				458C638F23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift in Sources */,
 				14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */,
 				45A016BD23C319E400B7DC08 /* UIDevice+Extension.swift in Sources */,
 				14140F31239CE7400055C06B /* AppDelegate.swift in Sources */,
 				149F136123C0E68F0078DE6D /* ResultFooter.swift in Sources */,
 				14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */,
+				458C638423D1878000AC7BA4 /* BRDynamicExpandCell.swift in Sources */,
 				45A016B223C2D3EB00B7DC08 /* BRPageManagerViewController.swift in Sources */,
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
@@ -402,6 +430,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BRElementPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = BRElementPackage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
