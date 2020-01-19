@@ -10,10 +10,16 @@ import UIKit
 
 class BRDynamicTableViewCell: UITableViewCell {
     @IBOutlet weak var collectionView: BRDynamicCollectionView!
-    
+
+    @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+//        translatesAutoresizingMaskIntoConstraints = false
+//                       contentView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+//                       contentView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+//                       contentView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+//                       contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -22,11 +28,11 @@ class BRDynamicTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    var dataAry : [String] = []
+    var dataAry: [String] = []
 
 }
 
-extension BRDynamicTableViewCell : UICollectionViewDataSource{
+extension BRDynamicTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        return dataAry.count
     }
@@ -34,11 +40,8 @@ extension BRDynamicTableViewCell : UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BRDynamicExpandCell", for: indexPath) as! BRDynamicExpandCell
         cell.showTextLabel.text = dataAry[indexPath.row]
-//        cell.LabelWidth.constant = UIScreen.main.bounds.width
-//        cell.LabelWidth.isActive = true
+        
         return cell
     }
 
-
 }
-
