@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14094EB423D5F86D00EF9272 /* BRPullToDimissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */; };
 		14140F31239CE7400055C06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F30239CE7400055C06B /* AppDelegate.swift */; };
 		14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F32239CE7400055C06B /* SceneDelegate.swift */; };
 		14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F34239CE7400055C06B /* BRSelectViewController.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPullToDimissTransition.swift; sourceTree = "<group>"; };
 		14140F2D239CE7400055C06B /* BRElementPackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRElementPackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14140F30239CE7400055C06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14140F32239CE7400055C06B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				45E8640D23D5AA4D00EEE3DE /* BRSlideAnimation.swift */,
+				14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				458C638423D1878000AC7BA4 /* BRDynamicExpandCell.swift in Sources */,
 				45A016B223C2D3EB00B7DC08 /* BRPageManagerViewController.swift in Sources */,
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
+				14094EB423D5F86D00EF9272 /* BRPullToDimissTransition.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
 				45E863FC23D5905900EEE3DE /* BRPresentedVC.swift in Sources */,
 				149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */,
