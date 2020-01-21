@@ -46,14 +46,25 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnD-hx-eWZ">
-                                        <rect key="frame" x="0.0" y="264" width="394" height="36"/>
+                                        <rect key="frame" x="0.0" y="132" width="394" height="36"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Present with automaic">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="PresentNormalAction:" destination="20A-Uq-2vu" eventType="touchUpInside" id="oRR-Ar-leE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nP0-Rn-CkG">
+                                        <rect key="frame" x="0.0" y="264" width="394" height="36"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Present with customer">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PresentCustomerAction:" destination="20A-Uq-2vu" eventType="touchUpInside" id="hW6-4D-1G8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -90,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="595"/>
         </scene>
-        <!--PresentedVC-->
+        <!--Normal PresentedVC-->
         <scene sceneID="R0f-KY-xc7">
             <objects>
-                <viewController id="d3B-ck-m7g" customClass="BRPresentedVC" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d3B-ck-m7g" customClass="BRNormalPresentedVC" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCB-XX-4yd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +115,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyG-i1-6Mw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="159" y="157"/>
+        </scene>
+        <!--Custom PresentVC-->
+        <scene sceneID="PPV-bx-ozJ">
+            <objects>
+                <viewController storyboardIdentifier="BRCustomPresentVC" id="DwS-bc-2nD" customClass="BRCustomPresentVC" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdH-8z-oIj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bYX-kP-NbG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HlO-vN-iau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="825"/>
         </scene>
     </scenes>
 </document>

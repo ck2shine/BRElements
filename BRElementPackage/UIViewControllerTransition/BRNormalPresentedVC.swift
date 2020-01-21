@@ -8,22 +8,23 @@
 
 import UIKit
 
-class BRPresentedVC: UIViewController {
+class BRNormalPresentedVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
 
-        self.presentationController?.delegate = self
+       // self.presentationController?.delegate = self
 
         //cancel drag down close menu
-        self.isModalInPresentation = false
+        //self.isModalInPresentation = false
     }
 
 }
 
-extension BRPresentedVC : UIAdaptivePresentationControllerDelegate{
+
+extension BRNormalPresentedVC : UIAdaptivePresentationControllerDelegate{
 
 
     //cancenl dismiss when drag down

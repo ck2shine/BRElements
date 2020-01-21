@@ -9,7 +9,13 @@
 import UIKit
 
 class BRUIViewControllerTrasitionVC: UIViewController {
-
+    @IBAction func PresentCustomerAction(_ sender: Any) {
+        let toVC = UIStoryboard(name: "BRUIViewControllerTrasition", bundle: nil).instantiateViewController(identifier: "BRCustomPresentVC") as! BRCustomPresentVC
+        toVC.transitioningDelegate = toVC
+        toVC.modalPresentationStyle = .custom
+        self.present(toVC, animated: true, completion: nil)
+    }
+    
     @IBAction func PresentNormalAction(_ sender: Any) {
         performSegue(withIdentifier: "toPresent", sender: nil)
     }
@@ -23,9 +29,16 @@ class BRUIViewControllerTrasitionVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case .some("toPresent"):
-            if let toVC = segue.destination as? BRPresentedVC{
+            if let toVC = segue.destination as? BRNormalPresentedVC{
                 //original present style , in ios13 , default is UIModalPresentationAutomatic
                 toVC.modalPresentationStyle = .automatic
+                //toVC.modalPresentationStyle = .fullScreen
+            }
+        case .some("toCustom"):
+            if let toVC = segue.destination as? BRCustomPresentVC{
+
+                toVC.transitioningDelegate = toVC
+                toVC.modalPresentationStyle = .custom
                 //toVC.modalPresentationStyle = .fullScreen
             }
         default:

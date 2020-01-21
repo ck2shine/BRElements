@@ -38,8 +38,10 @@
 		45A016B923C3040300B7DC08 /* BRDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */; };
 		45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016BA23C3089A00B7DC08 /* BRDetailDataViewController.swift */; };
 		45A016BD23C319E400B7DC08 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A016BC23C319E400B7DC08 /* UIDevice+Extension.swift */; };
+		45E5ABDA23D691C4008ECF0D /* BRCustomPresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5ABD923D691C4008ECF0D /* BRCustomPresentVC.swift */; };
+		45E5ABDE23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5ABDD23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift */; };
 		45E863F623D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E863F523D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard */; };
-		45E863FC23D5905900EEE3DE /* BRPresentedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E863FB23D5905900EEE3DE /* BRPresentedVC.swift */; };
+		45E863FC23D5905900EEE3DE /* BRNormalPresentedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E863FB23D5905900EEE3DE /* BRNormalPresentedVC.swift */; };
 		45E863FE23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E863FD23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift */; };
 		45E8640023D5A5C800EEE3DE /* BRTrasitionTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E863FF23D5A5C800EEE3DE /* BRTrasitionTabViewController.swift */; };
 		45E8640223D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E8640123D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard */; };
@@ -83,8 +85,10 @@
 		45A016B823C3040300B7DC08 /* BRDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDetailTableViewController.swift; sourceTree = "<group>"; };
 		45A016BA23C3089A00B7DC08 /* BRDetailDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRDetailDataViewController.swift; sourceTree = "<group>"; };
 		45A016BC23C319E400B7DC08 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		45E5ABD923D691C4008ECF0D /* BRCustomPresentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRCustomPresentVC.swift; sourceTree = "<group>"; };
+		45E5ABDD23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrensentAndDismissTransitionWithDim.swift; sourceTree = "<group>"; };
 		45E863F523D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRUIViewControllerTrasition.storyboard; sourceTree = "<group>"; };
-		45E863FB23D5905900EEE3DE /* BRPresentedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPresentedVC.swift; sourceTree = "<group>"; };
+		45E863FB23D5905900EEE3DE /* BRNormalPresentedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRNormalPresentedVC.swift; sourceTree = "<group>"; };
 		45E863FD23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRUIViewControllerTrasitionVC.swift; sourceTree = "<group>"; };
 		45E863FF23D5A5C800EEE3DE /* BRTrasitionTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRTrasitionTabViewController.swift; sourceTree = "<group>"; };
 		45E8640123D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRTrasitionTabViewController.storyboard; sourceTree = "<group>"; };
@@ -208,37 +212,47 @@
 			path = DetailWithTable;
 			sourceTree = "<group>";
 		};
-		45E863F423D58C6200EEE3DE /* UIViewControllerTransition */ = {
+		45E5ABD523D69163008ECF0D /* PresentedVC */ = {
 			isa = PBXGroup;
 			children = (
-				45E8640C23D5AA3A00EEE3DE /* Animations */,
-				45E8640323D5A6EC00EEE3DE /* TabBarSubController */,
-				45E863F523D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard */,
-				45E863FD23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift */,
-				45E863FB23D5905900EEE3DE /* BRPresentedVC.swift */,
-				45E863FF23D5A5C800EEE3DE /* BRTrasitionTabViewController.swift */,
-				45E8640123D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard */,
-				45E8640A23D5A96B00EEE3DE /* BRMainNavigationViewController.swift */,
+				45E863FB23D5905900EEE3DE /* BRNormalPresentedVC.swift */,
+				45E5ABD923D691C4008ECF0D /* BRCustomPresentVC.swift */,
 			);
-			path = UIViewControllerTransition;
+			name = PresentedVC;
 			sourceTree = "<group>";
 		};
-		45E8640323D5A6EC00EEE3DE /* TabBarSubController */ = {
+		45E5ABD623D69169008ECF0D /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				45E8640D23D5AA4D00EEE3DE /* BRSlideAnimation.swift */,
+				14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */,
+				45E5ABDD23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
+		45E5ABD823D6917D008ECF0D /* TabBarSubController */ = {
 			isa = PBXGroup;
 			children = (
 				45E8640623D5A72200EEE3DE /* BRTabAViewController.swift */,
 				45E8640823D5A73200EEE3DE /* BRTabBViewController.swift */,
 			);
-			path = TabBarSubController;
+			name = TabBarSubController;
 			sourceTree = "<group>";
 		};
-		45E8640C23D5AA3A00EEE3DE /* Animations */ = {
+		45E863F423D58C6200EEE3DE /* UIViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
-				45E8640D23D5AA4D00EEE3DE /* BRSlideAnimation.swift */,
-				14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */,
+				45E5ABD823D6917D008ECF0D /* TabBarSubController */,
+				45E5ABD623D69169008ECF0D /* Animations */,
+				45E5ABD523D69163008ECF0D /* PresentedVC */,
+				45E863F523D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard */,
+				45E863FD23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift */,
+				45E863FF23D5A5C800EEE3DE /* BRTrasitionTabViewController.swift */,
+				45E8640123D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard */,
+				45E8640A23D5A96B00EEE3DE /* BRMainNavigationViewController.swift */,
 			);
-			path = Animations;
+			path = UIViewControllerTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +338,7 @@
 				14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */,
 				45E8640B23D5A96B00EEE3DE /* BRMainNavigationViewController.swift in Sources */,
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
+				45E5ABDE23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift in Sources */,
 				456EE77B23D1B37F00381660 /* BRDynamicTableViewCell.swift in Sources */,
 				149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */,
 				458C637F23D1600B00AC7BA4 /* BRDynamicExpandHeightVC.swift in Sources */,
@@ -345,10 +360,11 @@
 				149F135523BE40940078DE6D /* MainListController.swift in Sources */,
 				14094EB423D5F86D00EF9272 /* BRPullToDimissTransition.swift in Sources */,
 				14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */,
-				45E863FC23D5905900EEE3DE /* BRPresentedVC.swift in Sources */,
+				45E863FC23D5905900EEE3DE /* BRNormalPresentedVC.swift in Sources */,
 				149F136B23C21C000078DE6D /* BRPhotoPagesViewController.swift in Sources */,
 				45E8640723D5A72200EEE3DE /* BRTabAViewController.swift in Sources */,
 				149F135723BE40C80078DE6D /* DetailViewController.swift in Sources */,
+				45E5ABDA23D691C4008ECF0D /* BRCustomPresentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
