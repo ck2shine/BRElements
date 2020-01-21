@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		14094EB423D5F86D00EF9272 /* BRPullToDimissTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */; };
+		14094EB623D74C8100EF9272 /* BRSwipeToPopInteractive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14094EB523D74C8100EF9272 /* BRSwipeToPopInteractive.swift */; };
+		14094EB823D755E000EF9272 /* BRSwipeFromLeftToRightTrasition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14094EB723D755E000EF9272 /* BRSwipeFromLeftToRightTrasition.swift */; };
+		14094EBB23D75C7000EF9272 /* BRPushNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14094EBA23D75C7000EF9272 /* BRPushNavigationVC.swift */; };
 		14140F31239CE7400055C06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F30239CE7400055C06B /* AppDelegate.swift */; };
 		14140F33239CE7400055C06B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F32239CE7400055C06B /* SceneDelegate.swift */; };
 		14140F35239CE7400055C06B /* BRSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F34239CE7400055C06B /* BRSelectViewController.swift */; };
@@ -53,6 +56,9 @@
 
 /* Begin PBXFileReference section */
 		14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPullToDimissTransition.swift; sourceTree = "<group>"; };
+		14094EB523D74C8100EF9272 /* BRSwipeToPopInteractive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSwipeToPopInteractive.swift; sourceTree = "<group>"; };
+		14094EB723D755E000EF9272 /* BRSwipeFromLeftToRightTrasition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRSwipeFromLeftToRightTrasition.swift; sourceTree = "<group>"; };
+		14094EBA23D75C7000EF9272 /* BRPushNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRPushNavigationVC.swift; sourceTree = "<group>"; };
 		14140F2D239CE7400055C06B /* BRElementPackage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRElementPackage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14140F30239CE7400055C06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14140F32239CE7400055C06B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14094EB923D75C4A00EF9272 /* NavigationVC */ = {
+			isa = PBXGroup;
+			children = (
+				14094EBA23D75C7000EF9272 /* BRPushNavigationVC.swift */,
+			);
+			name = NavigationVC;
+			sourceTree = "<group>";
+		};
 		14140F24239CE7400055C06B = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +241,8 @@
 				45E8640D23D5AA4D00EEE3DE /* BRSlideAnimation.swift */,
 				14094EB323D5F86D00EF9272 /* BRPullToDimissTransition.swift */,
 				45E5ABDD23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift */,
+				14094EB523D74C8100EF9272 /* BRSwipeToPopInteractive.swift */,
+				14094EB723D755E000EF9272 /* BRSwipeFromLeftToRightTrasition.swift */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -246,6 +262,7 @@
 				45E5ABD823D6917D008ECF0D /* TabBarSubController */,
 				45E5ABD623D69169008ECF0D /* Animations */,
 				45E5ABD523D69163008ECF0D /* PresentedVC */,
+				14094EB923D75C4A00EF9272 /* NavigationVC */,
 				45E863F523D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard */,
 				45E863FD23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift */,
 				45E863FF23D5A5C800EEE3DE /* BRTrasitionTabViewController.swift */,
@@ -338,6 +355,7 @@
 				14140F4B239D3F310055C06B /* BRImageZoom.swift in Sources */,
 				45E8640B23D5A96B00EEE3DE /* BRMainNavigationViewController.swift in Sources */,
 				14140F4F239D40E50055C06B /* BRFunctiomModel.swift in Sources */,
+				14094EB623D74C8100EF9272 /* BRSwipeToPopInteractive.swift in Sources */,
 				45E5ABDE23D6BFAC008ECF0D /* PrensentAndDismissTransitionWithDim.swift in Sources */,
 				456EE77B23D1B37F00381660 /* BRDynamicTableViewCell.swift in Sources */,
 				149F136923C2077E0078DE6D /* BRScrollCollection.swift in Sources */,
@@ -345,6 +363,7 @@
 				45E863FE23D5917000EEE3DE /* BRUIViewControllerTrasitionVC.swift in Sources */,
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
 				149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */,
+				14094EBB23D75C7000EF9272 /* BRPushNavigationVC.swift in Sources */,
 				45E8640923D5A73200EEE3DE /* BRTabBViewController.swift in Sources */,
 				45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */,
 				458C638F23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift in Sources */,
@@ -365,6 +384,7 @@
 				45E8640723D5A72200EEE3DE /* BRTabAViewController.swift in Sources */,
 				149F135723BE40C80078DE6D /* DetailViewController.swift in Sources */,
 				45E5ABDA23D691C4008ECF0D /* BRCustomPresentVC.swift in Sources */,
+				14094EB823D755E000EF9272 /* BRSwipeFromLeftToRightTrasition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

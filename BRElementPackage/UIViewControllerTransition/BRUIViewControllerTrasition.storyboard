@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Main Navigation View Controller-->
         <scene sceneID="ICd-Xh-2BO">
             <objects>
-                <navigationController id="ojk-tw-MhW" sceneMemberID="viewController">
+                <navigationController id="ojk-tw-MhW" customClass="BRMainNavigationViewController" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4hc-sh-hSR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,8 +45,19 @@
                                             <segue destination="9MN-dU-oes" kind="show" id="Jf7-p2-dZA"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uI-D8-0sw">
+                                        <rect key="frame" x="0.0" y="88" width="394" height="36"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Push to Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xx0-QK-awd" kind="show" id="xSq-YP-5Ve"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnD-hx-eWZ">
-                                        <rect key="frame" x="0.0" y="132" width="394" height="36"/>
+                                        <rect key="frame" x="0.0" y="176" width="394" height="36"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Present with automaic">
@@ -101,6 +112,22 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="595"/>
         </scene>
+        <!--Push NavigationVC-->
+        <scene sceneID="yxa-Vj-7vA">
+            <objects>
+                <viewController id="xx0-QK-awd" customClass="BRPushNavigationVC" customModule="BRElementPackage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Db-RI-6gx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="94J-B6-cwv"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YWQ-UL-7Kd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dce-sC-NFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="349"/>
+        </scene>
         <!--Normal PresentedVC-->
         <scene sceneID="R0f-KY-xc7">
             <objects>
@@ -114,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyG-i1-6Mw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159" y="157"/>
+            <point key="canvasLocation" x="230" y="-292"/>
         </scene>
         <!--Custom PresentVC-->
         <scene sceneID="PPV-bx-ozJ">
@@ -129,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlO-vN-iau" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="825"/>
+            <point key="canvasLocation" x="230" y="991"/>
         </scene>
     </scenes>
 </document>

@@ -60,7 +60,7 @@ class BRPullToDimissTransition : UIPercentDrivenInteractiveTransition{
 
             //animation percentage
             update(persentage)
-
+            //call UIViewControllerAnimatedTransitioning to keep update animation percentage
 
         case .ended:
 
