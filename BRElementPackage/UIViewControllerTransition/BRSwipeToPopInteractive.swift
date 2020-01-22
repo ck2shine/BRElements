@@ -40,16 +40,16 @@ class BRSwipeToPopInteractive : UIPercentDrivenInteractiveTransition{
             self.navigationController?.popViewController(animated: true)
         case .changed:
             let translation = sender.translation(in: interactiveView)
-            guard translation.y >= 0 else {
+
+            guard translation.x >= 0 else {
                 sender.setTranslation(.zero, in: interactiveView)
                 return
             }
             
-            let percentage = abs(translation.y / interactiveView!.bounds.size.height)
+            let percentage = abs(translation.x / interactiveView!.bounds.size.height)
             
             update(percentage)
         case .ended:
-            
             if percentComplete >= threshold {
                 finish()
             }else{

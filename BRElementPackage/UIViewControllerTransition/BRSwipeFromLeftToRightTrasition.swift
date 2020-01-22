@@ -18,7 +18,7 @@ class BRSwipeFromLeftToRightTrasition : NSObject , UIViewControllerAnimatedTrans
         }
         
         //original status
-        toView.frame.origin.x = -(UIScreen.main.bounds.width / 2)
+        toView.frame.origin.x = -(UIScreen.main.bounds.width / 2 )
         fromView.frame.origin.x = 0
         
         transitionContext.containerView.insertSubview(toView, belowSubview: fromView)
