@@ -22,6 +22,8 @@
 		14140F51239D45510055C06B /* BRImageZoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F50239D45510055C06B /* BRImageZoom.storyboard */; };
 		14140F5923A1094F0055C06B /* BRAutoExpandCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */; };
 		14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */; };
+		144475BF24474041009AD73F /* BRUIRefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144475BE24474041009AD73F /* BRUIRefreshController.swift */; };
+		144475C12447404C009AD73F /* BRUIRefreshController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 144475C02447404C009AD73F /* BRUIRefreshController.storyboard */; };
 		149F135323BE40170078DE6D /* BRUISearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 149F135223BE40170078DE6D /* BRUISearchBar.storyboard */; };
 		149F135523BE40940078DE6D /* MainListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135423BE40940078DE6D /* MainListController.swift */; };
 		149F135723BE40C80078DE6D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149F135623BE40C80078DE6D /* DetailViewController.swift */; };
@@ -72,6 +74,8 @@
 		14140F50239D45510055C06B /* BRImageZoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRImageZoom.storyboard; sourceTree = "<group>"; };
 		14140F5823A1094F0055C06B /* BRAutoExpandCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRAutoExpandCollection.swift; sourceTree = "<group>"; };
 		14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRAutoExpandCollection.storyboard; sourceTree = "<group>"; };
+		144475BE24474041009AD73F /* BRUIRefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRUIRefreshController.swift; sourceTree = "<group>"; };
+		144475C02447404C009AD73F /* BRUIRefreshController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRUIRefreshController.storyboard; sourceTree = "<group>"; };
 		149F135223BE40170078DE6D /* BRUISearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BRUISearchBar.storyboard; sourceTree = "<group>"; };
 		149F135423BE40940078DE6D /* MainListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListController.swift; sourceTree = "<group>"; };
 		149F135623BE40C80078DE6D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		14140F2F239CE7400055C06B /* BRElementPackage */ = {
 			isa = PBXGroup;
 			children = (
+				144475BD24474002009AD73F /* UIRefreshController */,
 				45E863F423D58C6200EEE3DE /* UIViewControllerTransition */,
 				458C637D23D15FCF00AC7BA4 /* DynamicExpandHeight */,
 				45A016B523C303CB00B7DC08 /* DetailWithTable */,
@@ -167,6 +172,15 @@
 				14140F5A23A109590055C06B /* BRAutoExpandCollection.storyboard */,
 			);
 			path = AutoExpandCollection;
+			sourceTree = "<group>";
+		};
+		144475BD24474002009AD73F /* UIRefreshController */ = {
+			isa = PBXGroup;
+			children = (
+				144475BE24474041009AD73F /* BRUIRefreshController.swift */,
+				144475C02447404C009AD73F /* BRUIRefreshController.storyboard */,
+			);
+			path = UIRefreshController;
 			sourceTree = "<group>";
 		};
 		149F135123BE3FD40078DE6D /* UISearchBarController */ = {
@@ -338,6 +352,7 @@
 				14140F38239CE7400055C06B /* BRSelectViewController.storyboard in Resources */,
 				45A016B723C303EC00B7DC08 /* BRDetailTableStoryboard.storyboard in Resources */,
 				45E863F623D58F5300EEE3DE /* BRUIViewControllerTrasition.storyboard in Resources */,
+				144475C12447404C009AD73F /* BRUIRefreshController.storyboard in Resources */,
 				149F135D23BE44CF0078DE6D /* dept.json in Resources */,
 				14140F5C23A12B850055C06B /* BRAutoExpandCollection.storyboard in Resources */,
 				45E8640223D5A5D200EEE3DE /* BRTrasitionTabViewController.storyboard in Resources */,
@@ -364,6 +379,7 @@
 				149F135F23BE45230078DE6D /* Depts.swift in Sources */,
 				149F136723C1BD130078DE6D /* BRZoomPhotoCell.swift in Sources */,
 				14094EBB23D75C7000EF9272 /* BRPushNavigationVC.swift in Sources */,
+				144475BF24474041009AD73F /* BRUIRefreshController.swift in Sources */,
 				45E8640923D5A73200EEE3DE /* BRTabBViewController.swift in Sources */,
 				45A016BB23C3089A00B7DC08 /* BRDetailDataViewController.swift in Sources */,
 				458C638F23D1A62C00AC7BA4 /* BRDynamicCollectionView.swift in Sources */,
